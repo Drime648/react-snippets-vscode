@@ -1,0 +1,29 @@
+{
+    "name": "react-snippets",
+    "displayName": "react-snippets",
+    "description": "basic react snippets to start a new component",
+    "version": "1.0.0",
+    "icon": "react-icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Drime648/react-snippets-vscode"
+    },
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
