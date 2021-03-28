@@ -1,6 +1,6 @@
 {
     "react hooks starter template": {
-        "prefix": "!react-hooks",
+        "prefix": "react-component",
         "body": [
             "import React, { useState, useEffect } from \"react\";",
             "import \"./Component.css\"",
@@ -26,6 +26,77 @@
             "",
             "export default Component;"
         ],
+
         "description": "creates a basic template to make a react component"
+    },
+    "basic fetch function": {
+        "prefix": "react-fetch-basic",
+        "body": [
+            "fetch(\"http://localhost:3001/\")",
+            ".then(response => response.json())",
+            ".then(data => {",
+            "console.log(data)",
+            "})",
+            ".catch(err => console.log(err))"
+        ]
+    },
+    "fetch function": {
+        "prefix": "react-fetch",
+        "body": [
+            "fetch(\"http://localhost:3001/\", {",
+            "   method: \"POST\", // *GET, POST, PUT, DELETE, etc.",
+            "   mode: \"cors\", // no-cors, *cors, same-origin",
+            "   cache: \"no-cache\",",
+            "   credentials: \"same-origin\",",
+            "   headers: {\"Content-Type\": \"application/json\"},",
+            "   // \"Content-Type\": \"application/x-www-form-urlencoded\",",
+            "   redirect: \"follow\",",
+            "   referrerPolicy: \"no-referrer\",", 
+            "   body: JSON.stringify({",
+            "       data: 123   //Add your requests here",
+            "   })",
+            "})",
+            ".then(response => {",
+            "   return response.json()",
+            "})",
+            ".then(responseData => {",
+            "   console.log(responseData);",
+            "})",
+            ".catch(err => console.log(err))"
+
+
+        ]
+    },
+    "input": {
+        "prefix": "react-input",
+        "body": [
+            "<div className= \" \">",
+            "   <label className=\"db fw6 lh-copy f6\" htmlFor=\"input\">input</label>",
+            "   <input ",
+            "   onChange = {onInputChange}",
+            "   onClick = {onInputClick}",
+            "   className=\"b pa2 input-reset ba bg-transparent w-100\" ",
+            "   type=\"text\" ",
+            "   name=\"input\" ",
+            "   id = \"input\" /> ",
+            "</div>"
+            
+        ]
+    },
+    "import component":{
+        "prefix": "react-import-component",
+        "body": [
+            "import Component from \"./Component\";"
+        ]
+    },
+    "import npm":{
+        "prefix": "react-import-npm",
+        "body": [
+            "import npmcomp from \"react-npmcomp\";"
+        ]
     }
+    
 }
+
+
+//http://localhost:3001/

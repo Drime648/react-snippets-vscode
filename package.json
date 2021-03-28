@@ -1,5 +1,6 @@
 {
     "name": "react-snippets",
+    "publisher": "DhruvKandula",
     "displayName": "react-snippets",
     "description": "basic react snippets to start a new component",
     "version": "1.0.0",
@@ -22,6 +23,14 @@
             },
             {
                 "language": "javascriptreact",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "htmlreact",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "html",
                 "path": "./snippets/snippets.code-snippets"
             }
         ]
